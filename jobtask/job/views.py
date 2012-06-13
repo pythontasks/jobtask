@@ -9,7 +9,7 @@ from django.views.decorators.csrf import csrf_exempt
 @require_http_methods(["POST"])
 @csrf_exempt
 def job(request):
-    contactInfo = {"email":"art.cudejko@hotmail.co.uk", "twitter":"none", "github":"http://githum.com", "skype":"arturmisio", "gitrepo":""}
+    contactInfo = {"email":"art.cudejko@hotmail.co.uk", "twitter":"none", "github":"https://github.com/jobtask1/jobtask", "skype":"arturmisio", "gitrepo":""}
     return HttpResponse(json.dumps(contactInfo), content_type="application/json")
 
 def jobtest(request):
